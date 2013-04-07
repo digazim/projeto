@@ -9,6 +9,7 @@
 	function onBodyLoad() {
 	document.getElementById('teste').innerHTML = 'whatever';
 	document.addEventListener("deviceready",onDeviceReady,false);
+	checkConnection();
 	};
 	// PhoneGap is ready
 	//
@@ -30,8 +31,8 @@
 	states[Connection.CELL_4G]  = 'Cell 4G connection';
 	states[Connection.NONE]     = 'No network connection';
 
-	//$('#teste').innerHTML = 'Connection type:'+ states[networkState]
-	document.getElementById('teste').innerHTML = 'whatever2';
+	$('#teste').innerHTML = 'Connection type:'+ states[networkState]
+	//document.getElementById('teste').innerHTML = 'whatever2';
 	
 	}
 	</script>
