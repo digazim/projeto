@@ -1,0 +1,38 @@
+@media all and (min-width: 801px) {
+	#wrapper {
+		width: 100%;
+		margin: auto;
+	}
+	#main {
+		margin-left: 40%;
+	}
+	#sidebar {
+		width: 40%;
+		float: left;
+	}
+}
+@media all and (max-width: 800px) {
+	#wrapper {
+		width: 100%;
+		min-width: 0;
+		padding:0px 0px 0px 0px;
+		margin:0;
+	}
+	#main {
+		margin-left: 0;
+		padding:0px 0px 0px 0px;
+	}
+	#header{
+		width: 100%;
+		padding:0px 0px 0px 0px;
+		margin:0;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+		padding:0px 0px 0px 0px;
+	}
+}
+body {
+	margin:0;
+}
