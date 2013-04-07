@@ -20,6 +20,8 @@
 	console.log("Height = " + window.innerHeight);
 	}
 	function checkConnection() {
+	
+	document.getElementById('teste').innerHTML = 'whatever3';
 	var networkState = navigator.connection.type;
 
 	var states = {};
@@ -32,7 +34,7 @@
 	states[Connection.NONE]     = 'No network connection';
 
 	$('#teste').innerHTML = 'Connection type:'+ states[networkState]
-	//document.getElementById('teste').innerHTML = 'whatever2';
+	document.getElementById('teste').innerHTML = 'whatever2';
 	
 	}
 	</script>
