@@ -41,12 +41,31 @@
 	   console.log("Height = " + window.innerHeight);
 	   }  </script>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+ <script src="../js/jquery.zrssfeed.js"></script>
+
+
+
+            <p><script type="text/javascript">
+
+                $(document).ready(function () {
+
+                                  $('#test').rssfeed('http://espaber.uspnet.usp.br/jorusp/?feed=rss', {
+
+                                                     limit: 5
+
+                                                     });
+
+                                  });
+
+                </script><div id="test"></div></p>
+
 </head>
 <body onload="onBodyLoad();">
     <div id="wrapper">
 	<div id="sidebar" style="color:#00FFFF;background:red">
 	sidebar
 	</div>
+	<!-- http://espaber.uspnet.usp.br/jorusp/?feed=rss -->
 	<div id="main" style="color:#0000FF;background:green">
 	main
 	</div>
