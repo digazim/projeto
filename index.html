@@ -24,7 +24,10 @@
 	
 	document.getElementById('teste').innerHTML = 'whatever3';
 	var networkState = navigator.connection.type;
-
+	document.getElementById('teste').innerHTML = 'whatever5@'+networkState;
+	var networkState2 = navigator.connection.type;
+	document.getElementById('teste2').innerHTML = 'whatever5!'+networkState2;
+	
 	document.getElementById('teste').innerHTML = 'whatever4';
 	var states = {};
 	document.getElementById('teste').innerHTML = 'whatever5'+networkState;
@@ -73,6 +76,8 @@
 	</div>
     </div>
 	<div id="teste">
+    </div>
+	<div id="teste2">
     </div>
     </body>
 </html>
