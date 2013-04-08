@@ -22,11 +22,11 @@
 	function checkConnection() {
 	
 	document.getElementById('teste').innerHTML = 'whatever3';
-	var networkState = navigator.connection.type;
+	var networkState = navigator.network.connection.type;
 
 	document.getElementById('teste').innerHTML = 'whatever4';
 	var states = {};
-	document.getElementById('teste').innerHTML = 'whatever5';
+	document.getElementById('teste').innerHTML = 'whatever5'+networkState;
 	states[Connection.UNKNOWN]  = 'Unknown connection';
 	document.getElementById('teste').innerHTML = 'whatever51';
 	states[Connection.ETHERNET] = 'Ethernet connection';
